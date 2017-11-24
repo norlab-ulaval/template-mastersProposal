@@ -14,5 +14,5 @@ This is mainly for students doing there Master's at Laval University.
 __Warning:__ There is a submodule in this repository. 
 Try to keep is consistent with the lastest version of the repository [latexGoodPractices](https://github.com/norlab-ulaval/latexGoodPractices).
 
-Don't hesitate to update through push request.
+Don't hesitate to update through pull request.
 If you can save time to other, the all lab gets more efficient so we can do more research instead of formating text...
