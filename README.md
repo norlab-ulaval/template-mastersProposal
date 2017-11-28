@@ -2,6 +2,9 @@
 Latex template for Master's project proposal. 
 This is mainly for students doing there Master's at Laval University.
 
+Examples of this template in use can be found [here](https://github.com/norlab-ulaval?utf8=%E2%9C%93&q=in%3Aname%20mastersProposal%20NOT%20template-mastersProposal&type=&language=tex).
+
+
 # How to Use
 1. Create an empty repository on norlab-ulaval GitHub. Name it `mastersProposal-<yourName>`.
 1. Copy the content of this repository.
