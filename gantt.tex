@@ -1,0 +1,80 @@
+
+%---------------------------------------------------------------
+% CONFIGURATION
+
+\definecolor{navyblue}{RGB}{21,80,130}
+\setganttlinklabel{f-s}{}
+
+\begin{ganttchart}[
+     %Specs
+     y unit title=0.5cm,
+     y unit chart=0.5cm,
+     x unit=1.3cm,
+     vgrid={*{2}{draw=none},*{1}{black}},
+     title height=1,
+     title label font=\bfseries\footnotesize,
+     % bar
+     bar/.style={fill=navyblue},
+     bar height=0.7,
+     bar label font=\footnotesize,
+     bar label node/.append style={left=10pt},
+     % group
+     group right shift=0,
+     group top shift=0.7,
+     group height=.3,
+     group peaks width={0.2},
+     group peaks height={0.3},
+     group label node/.append style={left=10pt},
+     group label font=\bfseries\footnotesize,
+     % milestone
+     milestone/.append style={xscale=0.4, yscale=1},
+     milestone label node/.append style={left=10pt},
+     milestone label font=\itshape\footnotesize
+     ]{1}{6}
+    \gantttitle[]{20XX}{3}
+    \gantttitle[]{20XX}{3} 
+    \\              
+    \gantttitle{W}{1} \gantttitle{S}{1} \gantttitle{A}{1}
+    \gantttitle{W}{1} \gantttitle{S}{1} \gantttitle{A}{1}
+    \\
+    %--------------------------------------       
+    \ganttgroup{Objective 1: Stuff}{1}{3}\\ 
+    
+    \ganttbar{Task 1}{1}{2}
+    \ganttbar[inline, bar label font/.append=\color{white}]{Extra info}{1}{2}\\
+    \ganttmilestone{Milestone (M1)}{1.5}\\
+	
+	\ganttbar{Task 2}{2}{3}
+	\ganttbar[inline, bar label font/.append=\color{white}]{more info}{2}{3}\\
+	\ganttmilestone{Milestone (M2)}{3}\\
+	
+    %--------------------------------------       
+    \ganttgroup{Objective 2: More stuff}{3}{6} \\ 
+    
+    \ganttbar{Task 3}{3}{4}
+    \ganttbar[inline, bar label font/.append=\color{white}]{stuff}{3}{4}\\
+    
+    \ganttmilestone{Milestone (M3)}{4}\\
+    
+    \ganttbar{Task 4}{4}{6}
+    \ganttbar[inline, bar label font/.append=\color{white}]{tmp}{4}{6}\\
+    \ganttmilestone{Milestone (M4)}{6}\\
+    
+    %--------------------------------------       
+    \ganttgroup{Objective 3: Field Testing}{1}{6} \\
+    \ganttbar[name=i1]{Integration}{2}{2}
+    \ganttbar[name=i2]{}{5}{5}
+    \\
+    \ganttbar[name=t1]{Deployment and tests on campus}{3}{3}
+    \ganttbar[name=t2]{}{6}{6}
+    \\
+    \ganttbar[name=e1]{Deployment and experiments in forests}{4}{4}
+    \\
+   % links
+    \ganttlink[link type=f-s]{i1}{t1}
+    \ganttlink[link type=f-s]{t1}{e1}
+    \ganttlink{e1}{i2}
+    
+    \ganttlink[link type=f-s]{i2}{t2}
+
+\end{ganttchart}

@@ -107,20 +107,22 @@ Before investing time in a figure, consult your supervisor.
 % ---------------------------------------------------------------
 \section{Schedule}
 
-Always link your table in the text (e.g., \autoref{tab:schedule}).
+Always link your table in the text (e.g., \autoref{fig:gantt}).
 
 \lightlipsum[1]
 
-\begin{table}[htbp]
+
+\begin{figure}[htbp]
   \centering
-  \caption{%
-  Schedule containing the objectives to be accomplished during this project.
+  \input{gantt}
+    \caption{%
+  Gantt chart containing the objectives to be accomplished during this project.
   The numbers refer to the objectives listed in \autoref{sec:objectives}.
-  \textbf{Note:} Change the file \texttt{./schedule.tex} to edit this table.
+  W= winter semester, S = summer semester, and A: Autumn semester.
+  \textbf{Note:} Change the file \texttt{./gantt.tex} to edit this table.
   }
-  \input{schedule.tex}
-  \label{tab:schedule}
-\end{table}
+  \label{}
+\end{figure}
 
 % ---------------------------------------------------------------
 \section{Conclusion}
