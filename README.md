@@ -1,3 +1,5 @@
+**Warning**: this template uses submodule. Use `git clone --recursive <url>` to clone.
+
 # Latex Template for Master's Proposal
 Latex template for Master's project proposal. 
 This is mainly for students doing there Master's at Laval University.
